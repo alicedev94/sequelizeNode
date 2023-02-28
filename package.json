@@ -1,0 +1,30 @@
+{
+  "name": "sequelizenodepg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alicedev94/sequelizeNodePg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alicedev94/sequelizeNodePg/issues"
+  },
+  "homepage": "https://github.com/alicedev94/sequelizeNodePg#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "oracledb": "^5.5.0",
+    "sequelize": "^6.29.0",
+    "tedious": "^15.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
