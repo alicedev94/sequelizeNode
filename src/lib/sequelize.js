@@ -18,9 +18,7 @@ const sequelize = new Sequelize(
   process.env.DB_PASSWORD,
   {
     host: process.env.DB_SERVER,
-    dialect:
-      process.env
-        .DB_ENGINE /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */,
+    dialect: 'mssql' /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */,
     dialectOptions: {
       options: {
         // Your tedious options here
@@ -31,6 +29,6 @@ const sequelize = new Sequelize(
 );
 
 setupModels(sequelize);
-sequelize.sync();
+//sequelize.sync();
 
 module.exports = sequelize;
